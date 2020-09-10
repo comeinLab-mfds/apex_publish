@@ -1360,8 +1360,8 @@ function drawRSO2ETCO2Chart() {
 }
 
 
-google.load('visualization', '1', {packages: ['controls'], callback: drawDashboard});
-google.charts.load("current", {'packages': ['corechart', 'bar', 'scatter']});
+google.charts.load("current", {'packages': ['corechart', 'bar', 'scatter','controls']});
+google.charts.setOnLoadCallback(drawDashboard);
 google.charts.setOnLoadCallback(drawModalCOxMAPChart);
 google.charts.setOnLoadCallback(drawRSO2MAPChart);
 google.charts.setOnLoadCallback(drawCO2xETCO2Chart);
