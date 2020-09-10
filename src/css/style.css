@@ -83,6 +83,9 @@ input {
     outline: 0;
 }
 
+#control_div {
+    flex: 1
+}
 button {
     border: 0;
     background-color: transparent;
@@ -562,7 +565,6 @@ header .change-theme small {
     padding: .2rem;
     margin: .5rem;
     display: flex;
-    width: 3000px;
     height: 180px;
     position: relative;
     overflow: hidden;
