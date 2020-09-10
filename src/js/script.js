@@ -38,10 +38,10 @@ var chart_data = [
     ["2020-4-22-01", 0.17, 0.279, 0.752, 0.516, -0.195, 0, 39.0, 41.0, 80, 80, 85, 85, 99.26, 40, 40, 45, 45, 49.26, 56, 8, 3, 4, 28, 6, 28, 5, 3.94, 3.74, 3.94, 3.74],
     ["2020-4-22-02", 0.28, -0.004, 0.437, 0.216, -0.481, 0, 39.0, 41.0, 80, 80, 85, 85, 98.99, 40, 40, 45, 45, 48.99, 57, 4, 6, 6, 24, 8, 24, 2, 3.94, 3.74, 3.94, 3.74],
     ["2020-4-22-03", 0.29, 0.377, 0.292, 0.334, -0.559, -0.037, 39.0, 41.0, 80, 80, 85, 85, 99.1, 40, 40, 45, 45, 49.1, 56, 1, 2, 8, 31, 4, 31, 7, 3.94, 3.74, 3.94, 3.74],
-    ["2020-4-22-03", 0.29, 0.377, 0.292, 0.334, -0.559, -0.037, 39.0, 41.0, 80, 80, 85, 85, 99.25, 40, 40, 45, 45, 49.25, 59, 2, 6, 5, 32, 1, 32, 5, 3.94, 3.74, 3.94, 3.74],
     ["2020-4-22-04", 0.30, 0.687, 0.084, 0.386, -0.623, -0.081, 39.0, 41.0, 80, 80, 85, 85, 99.5, 40, 40, 45, 45, 49.25, 70, 3, 5, 5, 33, 2, 33, 6, 3.94, 3.74, 3.94, 3.74],
 ];
 
+var chartDateSlider
 function drawDashboard() {
     var data = new google.visualization.DataTable();
     data.addColumn('date', 'Date');
@@ -116,17 +116,16 @@ function drawDashboard() {
         ]);
     }
 
-    var myDashboard = new google.visualization.Dashboard(document.getElementById('dashboard_div'));
-    var myDateSlider = new google.visualization.ControlWrapper({
-        'controlType': 'ChartRangeFilter',
-        'containerId': 'control_div',
+    var chartDashboard = new google.visualization.Dashboard(document.getElementById('dashboard_div'));
+    var chartDateRanger = new google.visualization.ControlWrapper({
+        'controlType': 'DateRangeFilter',
+        'containerId': 'chartDateRanger',
         'options': {
             // Filter by the date axis.
             'filterColumnLabel': 'Date',
             'ui': {
                 'chartOptions': {
-                    'height': 40,
-                    'width': '100%'
+                    'height': 40
                 },
             }
         },
@@ -137,6 +136,7 @@ function drawDashboard() {
             }
         }
     });
+
 
     var COxChart = new google.visualization.ChartWrapper({
         chartType: 'LineChart',
@@ -361,6 +361,10 @@ function drawDashboard() {
                 color: "yellow"
             },
             hAxis: {
+                viewWindow: {
+                    min: new Date(2020, 4, 20, 13),
+                    max: new Date(2020, 4, 22, 4)
+                },
                 gridlines: {
                     color: '#777',
                     units: {
@@ -424,6 +428,10 @@ function drawDashboard() {
                 color: "yellow"
             },
             hAxis: {
+                viewWindow: {
+                    min: new Date(2020, 4, 20, 13),
+                    max: new Date(2020, 4, 22, 4)
+                },
                 gridlines: {
                     color: '#777',
                     units: {
@@ -1134,7 +1142,7 @@ function drawDashboard() {
         }
     })
 
-    myDashboard.bind(myDateSlider, [COxChart, COxMAPChart, COxETCO2Chart, RSO2Chart, MAPChart, ETCO2Chart, SJVO2Chart, ADJLChart, LOIChart, AVDO2Chart, CEO2Chart, AJglcChart, AJCO2Chart, RQChart, NPIChart, PupilChart]).draw(data);
+    chartDashboard.bind(chartDateRanger, [COxMAPChart, COxETCO2Chart, RSO2Chart, MAPChart, ETCO2Chart, SJVO2Chart, ADJLChart, LOIChart, AVDO2Chart, CEO2Chart, AJglcChart, AJCO2Chart, RQChart, NPIChart, PupilChart]).draw(data);
 
 }
 
@@ -1366,3 +1374,4 @@ google.charts.setOnLoadCallback(drawModalCOxMAPChart);
 google.charts.setOnLoadCallback(drawRSO2MAPChart);
 google.charts.setOnLoadCallback(drawCO2xETCO2Chart);
 google.charts.setOnLoadCallback(drawRSO2ETCO2Chart);
+

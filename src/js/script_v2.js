@@ -76,10 +76,10 @@ function drawDashboard() {
         ]);
     }
 
-    var myDashboard = new google.visualization.Dashboard(document.getElementById('dashboard_div'));
-    var myDateSlider = new google.visualization.ControlWrapper({
+    var chartDashboard = new google.visualization.Dashboard(document.getElementById('chartDashboard'));
+    var chartDateSlider = new google.visualization.ControlWrapper({
         'controlType': 'ChartRangeFilter',
-        'containerId': 'control_div',
+        'containerId': 'dateRanger',
         'options': {
             // Filter by the date axis.
             'filterColumnLabel': 'Date',
@@ -201,7 +201,7 @@ function drawDashboard() {
         }
     })
 
-    myDashboard.bind(myDateSlider, [COxChart, COxMAPChart]).draw(data);
+    chartDashboard.bind(chartDateSlider, [COxChart, COxMAPChart]).draw(data);
 
 }
 
