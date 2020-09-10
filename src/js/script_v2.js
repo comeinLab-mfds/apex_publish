@@ -1,7 +1,7 @@
 google.load('visualization', '1', {packages: ['corechart', 'controls']});
 google.setOnLoadCallback(drawDashboard);
 
-var chart_test_data = [
+var chart_data = [
     ["2020-4-20-13", 0.2, 0, 0, 0, null, null, null],
     ["2020-4-20-14", 0.2, 0, 0, 0, null, null, null],
     ["2020-4-20-15", 0.3, 0, 0, 0, null, null, null],
@@ -55,8 +55,8 @@ function drawDashboard() {
     data.addColumn({'type': 'number', 'role': 'interval'});
     data.addColumn({'type': 'string', 'role': 'annotation'});
 
-    for (var i = 0; i < chart_test_data.length; i++) {
-        var tmpArray = chart_test_data[i][0]
+    for (var i = 0; i < chart_data.length; i++) {
+        var tmpArray = chart_data[i][0]
         var yearValue = parseInt(tmpArray[0].date.substr(0,4))
         var monthValue = parseInt(tmpArray[0].date.substr(4,6)) -1
         var dayValue = parseInt(tmpArray[0].date.substr(4,6)) -1
@@ -65,14 +65,14 @@ function drawDashboard() {
         var date = new Date(yearValue, monthValue, parseInt(tmpArray[2]),  parseInt(tmpArray[3]));
         console.log(date)
         data.addRow([
-            parseInt(chart_test_data[i][0]),
-            parseInt(chart_test_data[i][1]),
-            parseInt(chart_test_data[i][2]),
-            parseInt(chart_test_data[i][3]),
-            parseInt(chart_test_data[i][4]),
-            parseInt(chart_test_data[i][5]),
-            parseInt(chart_test_data[i][6]),
-            parseInt(chart_test_data[i][7]),
+            parseInt(chart_data[i][0]),
+            parseInt(chart_data[i][1]),
+            parseInt(chart_data[i][2]),
+            parseInt(chart_data[i][3]),
+            parseInt(chart_data[i][4]),
+            parseInt(chart_data[i][5]),
+            parseInt(chart_data[i][6]),
+            parseInt(chart_data[i][7]),
         ]);
     }
 
