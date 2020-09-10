@@ -83,8 +83,10 @@ input {
     outline: 0;
 }
 
-#control_div {
-    flex: 1
+#chartDateRanger {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
 }
 button {
     border: 0;
