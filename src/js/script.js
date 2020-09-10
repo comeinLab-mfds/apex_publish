@@ -361,10 +361,6 @@ function drawDashboard() {
                 color: "yellow"
             },
             hAxis: {
-                viewWindow: {
-                    min: new Date(2020, 4, 20, 13),
-                    max: new Date(2020, 4, 22, 4)
-                },
                 gridlines: {
                     color: '#777',
                     units: {
@@ -428,10 +424,6 @@ function drawDashboard() {
                 color: "yellow"
             },
             hAxis: {
-                viewWindow: {
-                    min: new Date(2020, 4, 20, 13),
-                    max: new Date(2020, 4, 22, 4)
-                },
                 gridlines: {
                     color: '#777',
                     units: {
