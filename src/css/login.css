@@ -1,4 +1,6 @@
-
+input {
+    border-radius: 0;
+}
 
 .login {
     justify-content: center;
@@ -109,21 +111,19 @@ h1 {
 }
 
 .brand .heading h2 {
-    font-size: 3.5rem;
+    font: 4rem/1 'Oswald';
     white-space: nowrap;
-    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 0;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
 }
 
 .brand .heading p {
-    font-size: 15px;
-    font-weight: 300;
+    font: 13px/1 "Raleway", sans-serif;
     white-space: nowrap;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+    margin: .5rem
 }
 
 .brand .success-msg {
@@ -248,7 +248,7 @@ h1 {
     line-height: 1;
     padding: .3rem 0;
     width: 100%;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #CCC;
     color: white;
     font-size: 15px;
     font-family: "Montserrat", sans-serif;

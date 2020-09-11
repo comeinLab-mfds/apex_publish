@@ -10,6 +10,12 @@
     src: url('../fonts/Raleway-Medium.ttf');
 }
 
+@font-face {
+    font-family: 'Oswald';
+    font-weight: 400;
+    src: url('../fonts/Oswald-Regular.ttf');
+}
+
 :root {
     --var-mainColor: #01797F;
     --var-secondaryColor: #0A2E51
@@ -86,7 +92,7 @@ input {
 #chartDateRanger {
     display: flex;
     justify-content: center;
-    padding-bottom: 0;
+    padding: 1rem 1rem .5rem;
 }
 button {
     border: 0;
@@ -258,7 +264,7 @@ header {
 header section {
     flex: 1 1 100%;
     display: flex;
-    padding: .7rem;
+    padding: .5rem;
     justify-content: space-between;
     align-items: center;
 
@@ -266,7 +272,8 @@ header section {
 
 header section.nrf {
     padding: .5rem .7rem;
-    color: #CCC
+    color: #CCC;
+    justify-content: center;
 }
 
 header .logo-nrf {
@@ -274,6 +281,7 @@ header .logo-nrf {
     height: 24px;
     background: url("../images/logo_nrf.png") no-repeat center;
     background-size: contain;
+    background: none;
     opacity: .7;
 }
 
@@ -325,11 +333,18 @@ header .apex-header .refresh button:hover {
 }
 
 header .logo {
-    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 header .logo a {
-    font: 18px/1.5 "Nunito", "sans-serif";
+    font: 20px/1.5 "Oswald", "sans-serif";
+}
+
+header .logo small {
+    line-height: 1;
+    color: #DDD;
+    margin-left: .5rem
 }
 
 header .navigation {
@@ -444,6 +459,10 @@ header .change-theme small {
     background-color: darkslategray;
 }
 
+.content.list .record span {
+    font-weight: normal;
+}
+
 .scroll-handler {
     position: fixed;
     bottom: 1rem;
@@ -521,6 +540,11 @@ header .change-theme small {
     justify-content: space-between;
 }
 
+.title h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
 .title .btn-save {
     height: 100%;
     font-size: 1rem;
@@ -572,25 +596,25 @@ header .change-theme small {
     overflow: hidden;
     background-position: center;
     background-repeat: no-repeat;
-    background-repeat: repeat-x;
-    background-repeat-y: no-repeat;
+    /*background-repeat: repeat-x;
+    background-repeat-y: no-repeat;*/
     animation: fadeIn .7s forwards;
 }
 
 .filter-COxMAP {
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='2000px'><text x='0' y='15' fill='gray' font-size='20'>COx MAP</text></svg>");
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='100px'><text x='0' y='15' fill='gray' font-size='20'>COx MAP</text></svg>");
 }
 
 .filter-COxETCO2 {
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='2000px'><text x='0' y='15' fill='gray' font-size='20'>COx ETCO2</text></svg>");
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='100px'><text x='0' y='15' fill='gray' font-size='20'>COx ETCO2</text></svg>");
 }
 
 .filter-RSO2 {
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='2000px'><text x='0' y='15' fill='gray' font-size='20'>RSO2</text></svg>");
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='100px'><text x='0' y='15' fill='gray' font-size='20'>RSO2</text></svg>");
 }
 
 .filter-MAP {
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='2000px'><text x='0' y='15' fill='gray' font-size='20'>MAP</text></svg>");
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='100px'><text x='0' y='15' fill='gray' font-size='20'>MAP</text></svg>");
     position: relative;
 }
 
@@ -606,7 +630,7 @@ header .change-theme small {
 }
 
 .filter-ETCO2 {
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='2000px'><text x='0' y='15' fill='gray' font-size='20'>ETCO2</text></svg>");
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='100px'><text x='0' y='15' fill='gray' font-size='20'>ETCO2</text></svg>");
 }
 
 .filter-ETCO2::before {
@@ -621,43 +645,43 @@ header .change-theme small {
 }
 
 .filter-SJVO2 {
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='2000px'><text x='0' y='15' fill='gray' font-size='20'>SJVO2</text></svg>");
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='100px'><text x='0' y='15' fill='gray' font-size='20'>SJVO2</text></svg>");
 }
 
 .filter-ADJL {
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='2000px'><text x='0' y='15' fill='gray' font-size='20'>ADJL</text></svg>");
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='100px'><text x='0' y='15' fill='gray' font-size='20'>ADJL</text></svg>");
 }
 
 .filter-LOI {
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='2000px'><text x='0' y='15' fill='gray' font-size='20'>LOI</text></svg>");
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='100px'><text x='0' y='15' fill='gray' font-size='20'>LOI</text></svg>");
 }
 
 .filter-AVDO2 {
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='2000px'><text x='0' y='15' fill='gray' font-size='20'>AVDO2</text></svg>");
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='100px'><text x='0' y='15' fill='gray' font-size='20'>AVDO2</text></svg>");
 }
 
 .filter-CEO2 {
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='2000px'><text x='0' y='15' fill='gray' font-size='20'>CEO2</text></svg>");
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='100px'><text x='0' y='15' fill='gray' font-size='20'>CEO2</text></svg>");
 }
 
 .filter-AJglc {
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='2000px'><text x='0' y='15' fill='gray' font-size='20'>AJglc</text></svg>");
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='100px'><text x='0' y='15' fill='gray' font-size='20'>AJglc</text></svg>");
 }
 
 .filter-AJCO2 {
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='2000px'><text x='0' y='15' fill='gray' font-size='20'>AJCO2</text></svg>");
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='100px'><text x='0' y='15' fill='gray' font-size='20'>AJCO2</text></svg>");
 }
 
 .filter-RQ {
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='2000px'><text x='0' y='15' fill='gray' font-size='20'>RQ</text></svg>");
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='100px'><text x='0' y='15' fill='gray' font-size='20'>RQ</text></svg>");
 }
 
 .filter-NPI {
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='2000px'><text x='0' y='15' fill='gray' font-size='20'>NPI</text></svg>");
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='100px'><text x='0' y='15' fill='gray' font-size='20'>NPI</text></svg>");
 }
 
 .filter-pupil {
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='2000px'><text x='0' y='15' fill='gray' font-size='20'>Pupil Size</text></svg>");
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='100px'><text x='0' y='15' fill='gray' font-size='20'>Pupil Size</text></svg>");
 }
 
 .chart-container:nth-of-type(1) {
@@ -898,6 +922,33 @@ header .change-theme small {
     width: 100%;
     height: 500px
 }
+
+.google-visualization-controls-rangefilter-thumblabel {
+    color: #CCC !important;
+    font-weight: normal !important;
+}
+
+.google-visualization-controls-rangefilter .google-visualization-controls-label {
+    display: none;
+}
+
+.google-visualization-controls-slider-thumb {
+    top: -6px !important;
+    background-color: slateblue !important;
+    border: 0 !important;
+    position: absolute !important;
+    border-radius: 50% !important;
+}
+
+.google-visualization-controls-slider-horizontal {
+    width: 500px !important;
+    height: 6px !important;
+}
+
+.google-visualization-controls-slider-horizontal .google-visualization-controls-slider-handle {
+    height: 6px !important;
+}
+
 
 
 /* Dark Theme */
