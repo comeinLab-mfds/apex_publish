@@ -23,7 +23,7 @@
                     <a href="/apex">EICU-APEX</a>
                 </div>
                 <nav class="navigation nav_tabs">
-                    <a href="index_v1.html">
+                    <a href="index.html">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
                             <path d="M16 1H2c-.55 0-1 .45-1 1v14c0 .55.45 1 1 1h14c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zM7 13H5V8h2v5zm3 0H8V5h2v8zm3 0h-2V9h2v4z"/>
                         </svg>
@@ -183,48 +183,63 @@
         </div>
 
         <div class="chart-container filter-COxMAP" draggable="true">
+            <small>COx MAP</small>
             <div id="COxMAPChart" class="chart"></div>
         </div>
-        <div class="chart-container filter-COxMAP" draggable="true">
+        <div class="chart-container filter-COxETCO2" draggable="true">
+            <small>COx ETCO2</small>
             <div id="COxETCO2Chart" class="chart"></div>
         </div>
         <div class="chart-container filter-RSO2" draggable="true">
+            <small>COx RSO2</small>
             <div id="RSO2Chart" class="chart"></div>
         </div>
         <div class="chart-container filter-MAP" draggable="true" ondblclick="COxMAPModal()">
+            <small>MAP</small>
             <div id="MAPChart" class="chart"></div>
         </div>
-        <div class="chart-container filter-ETCO2" draggable="true" ondblclick="ETCO2Modal()">
+        <div class="chart-container filter-ETCO2" draggable="true" ondblclick="CO2xETCO2Modal()">
+            <small>ETCO2</small>
             <div id="ETCO2Chart" class="chart"></div>
         </div>
         <div class="chart-container filter-SJVO2" draggable="true">
+            <small>SJVO2</small>
             <div id="SJVO2Chart" class="chart"></div>
         </div>
         <div class="chart-container filter-ADJL" draggable="true">
+            <small>ADJL</small>
             <div id="ADJLChart" class="chart"></div>
         </div>
         <div class="chart-container filter-LOI" draggable="true">
+            <small>LOI</small>
             <div id="LOIChart" class="chart"></div>
         </div>
         <div class="chart-container filter-AVDO2" draggable="true">
+            <small>AVDO2</small>
             <div id="AVDO2Chart" class="chart"></div>
         </div>
         <div class="chart-container filter-CEO2" draggable="true">
+            <small>CEO2</small>
             <div id="CEO2Chart" class="chart"></div>
         </div>
         <div class="chart-container filter-AJglc" draggable="true">
+            <small>AJglc</small>
             <div id="AJglcChart" class="chart"></div>
         </div>
         <div class="chart-container filter-AJCO2" draggable="true">
+            <small>AJCO2</small>
             <div id="AJCO2Chart" class="chart"></div>
         </div>
         <div class="chart-container filter-RQ" draggable="true">
+            <small>RQ</small>
             <div id="RQChart" class="chart"></div>
         </div>
         <div class="chart-container filter-NPI" draggable="true">
+            <small>NPI</small>
             <div id="NPIChart" class="chart"></div>
         </div>
         <div class="chart-container filter-pupil" draggable="true">
+            <small>Pupil Size</small>
             <div id="PupilChart" class="chart"></div>
         </div>
     </section>
@@ -237,7 +252,13 @@
             </svg>
         </div>
         <div class="chart-container">
-            <div id="modalCOxMAPChart" class="chart"></div>
+            <div id="modalCOxLeftMAPChart" class="chart"></div>
+        </div>
+        <div class="chart-container">
+            <div id="modalCOxRightMAPChart" class="chart"></div>
+        </div>
+        <div class="chart-container">
+            <div id="modalCOxAverageMAPChart" class="chart"></div>
         </div>
         <div class="chart-container">
             <div id="modalRSO2MAPChart" class="chart"></div>
@@ -245,14 +266,20 @@
     </div>
 
     <!-- Modal COx -->
-    <div class="modal modal-ETCO2">
+    <div class="modal modal-CO2x-ETCO2">
         <div class="close">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
                 <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"/>
             </svg>
         </div>
         <div class="chart-container">
-            <div id="modalCO2xETCO2Chart" class="chart"></div>
+            <div id="modalCO2xETCO2LeftChart" class="chart"></div>
+        </div>
+        <div class="chart-container">
+            <div id="modalCO2xETCO2RightChart" class="chart"></div>
+        </div>
+        <div class="chart-container">
+            <div id="modalCO2xETCO2AverageChart" class="chart"></div>
         </div>
         <div class="chart-container">
             <div id="modalRSO2ETCO2Chart" class="chart"></div>

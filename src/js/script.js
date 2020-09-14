@@ -170,7 +170,6 @@ function drawDashboard() {
                 }
             },
             vAxis: {
-                title: "COx",
                 lineWidth: 10,
                 ticks: [0, .3, .5],
                 baselineColor: '#777',
@@ -180,9 +179,11 @@ function drawDashboard() {
                 }
             },
             chartArea: {
-                width: '93%',
+                left: '70',
+                right: '10',
+                width: '100%',
                 height: '73%'
-            }
+            },
         },
         view: {
             columns: [0, 1]
@@ -224,7 +225,6 @@ function drawDashboard() {
                 }
             },
             vAxis: {
-                title: "COx MAP",
                 ticks: [-1, 0, 1],
                 baselineColor: '#777',
                 gridlineColor: '#777',
@@ -233,7 +233,9 @@ function drawDashboard() {
                 }
             },
             chartArea: {
-                width: '93%',
+                left: '70',
+                right: '10',
+                width: '100%',
                 height: '73%'
             }
         },
@@ -275,7 +277,6 @@ function drawDashboard() {
                 }
             },
             vAxis: {
-                title: "COx ETCO2",
                 ticks: [-1, 0, 1],
                 baselineColor: '#777',
                 gridlineColor: '#777',
@@ -284,7 +285,9 @@ function drawDashboard() {
                 }
             },
             chartArea: {
-                width: '93%',
+                left: '70',
+                right: '10',
+                width: '100%',
                 height: '73%'
             }
         },
@@ -292,7 +295,6 @@ function drawDashboard() {
             columns: [0, 5, 6]
         }
     })
-
 
     var RSO2Chart = new google.visualization.ChartWrapper({
         chartType: 'LineChart',
@@ -326,7 +328,6 @@ function drawDashboard() {
                 }
             },
             vAxis: {
-                title: "RSO2",
                 baselineColor: '#777',
                 gridlineColor: '#777',
                 ticks: [20, 30, 40, 50, 60],
@@ -335,7 +336,9 @@ function drawDashboard() {
                 }
             },
             chartArea: {
-                width: '93%',
+                left: '70',
+                right: '10',
+                width: '100%',
                 height: '73%'
             }
         },
@@ -377,7 +380,6 @@ function drawDashboard() {
                 }
             },
             vAxis: {
-                title: "MAP",
                 ticks: [0, 50, 100, 150],
                 baselineColor: '#777',
                 gridlineColor: '#777',
@@ -386,7 +388,9 @@ function drawDashboard() {
                 }
             },
             chartArea: {
-                width: '93%',
+                left: '70',
+                right: '10',
+                width: '100%',
                 height: '73%'
             },
             seriesType: 'candlesticks',
@@ -440,7 +444,6 @@ function drawDashboard() {
                 }
             },
             vAxis: {
-                title: "ETCO2",
                 ticks: [0, 10, 20, 30, 40, 50, 60],
                 baselineColor: '#777',
                 gridlineColor: '#777',
@@ -449,7 +452,9 @@ function drawDashboard() {
                 }
             },
             chartArea: {
-                width: '93%',
+                left: '70',
+                right: '10',
+                width: '100%',
                 height: '73%'
             },
             seriesType: 'candlesticks',
@@ -502,7 +507,6 @@ function drawDashboard() {
                 }
             },
             vAxis: {
-                title: "SJVO2",
                 ticks: [20, 40, 60, 80, 100],
                 baselineColor: '#777',
                 gridlineColor: '#777',
@@ -511,7 +515,9 @@ function drawDashboard() {
                 }
             },
             chartArea: {
-                width: '93%',
+                left: '70',
+                right: '10',
+                width: '100%',
                 height: '73%'
             }
         },
@@ -552,7 +558,6 @@ function drawDashboard() {
                 }
             },
             vAxis: {
-                title: "ADJL",
                 baselineColor: '#777',
                 gridlineColor: '#777',
                 minorGridlines: {
@@ -560,7 +565,9 @@ function drawDashboard() {
                 }
             },
             chartArea: {
-                width: '93%',
+                left: '70',
+                right: '10',
+                width: '100%',
                 height: '73%'
             }
         },
@@ -601,7 +608,6 @@ function drawDashboard() {
                 }
             },
             vAxis: {
-                title: "LOI",
                 baselineColor: '#777',
                 gridlineColor: '#777',
                 minorGridlines: {
@@ -609,7 +615,9 @@ function drawDashboard() {
                 }
             },
             chartArea: {
-                width: '93%',
+                left: '70',
+                right: '10',
+                width: '100%',
                 height: '73%'
             }
         },
@@ -650,7 +658,6 @@ function drawDashboard() {
                 }
             },
             vAxis: {
-                title: "AVDO2",
                 baselineColor: '#777',
                 gridlineColor: '#777',
                 minorGridlines: {
@@ -658,7 +665,9 @@ function drawDashboard() {
                 }
             },
             chartArea: {
-                width: '93%',
+                left: '70',
+                right: '10',
+                width: '100%',
                 height: '73%'
             }
         },
@@ -700,7 +709,6 @@ function drawDashboard() {
                 }
             },
             vAxis: {
-                title: "CEO2",
                 ticks: [0, 10, 20, 30, 40, 50, 60],
                 baselineColor: '#777',
                 gridlineColor: '#777',
@@ -709,7 +717,9 @@ function drawDashboard() {
                 }
             },
             chartArea: {
-                width: '93%',
+                left: '70',
+                right: '10',
+                width: '100%',
                 height: '73%'
             }
         },
@@ -750,7 +760,6 @@ function drawDashboard() {
                 }
             },
             vAxis: {
-                title: "AJglc",
                 baselineColor: '#777',
                 gridlineColor: '#777',
                 minorGridlines: {
@@ -758,7 +767,9 @@ function drawDashboard() {
                 }
             },
             chartArea: {
-                width: '93%',
+                left: '70',
+                right: '10',
+                width: '100%',
                 height: '73%'
             }
         },
@@ -800,7 +811,6 @@ function drawDashboard() {
                 }
             },
             vAxis: {
-                title: "AJCO2",
                 ticks: [0, 10, 20, 30, 40, 50, 60],
                 baselineColor: '#777',
                 gridlineColor: '#777',
@@ -809,7 +819,9 @@ function drawDashboard() {
                 }
             },
             chartArea: {
-                width: '93%',
+                left: '70',
+                right: '10',
+                width: '100%',
                 height: '73%'
             }
         },
@@ -850,7 +862,6 @@ function drawDashboard() {
                 }
             },
             vAxis: {
-                title: "RQ",
                 baselineColor: '#777',
                 gridlineColor: '#777',
                 minorGridlines: {
@@ -858,7 +869,9 @@ function drawDashboard() {
                 }
             },
             chartArea: {
-                width: '93%',
+                left: '70',
+                right: '10',
+                width: '100%',
                 height: '73%'
             }
         },
@@ -900,7 +913,6 @@ function drawDashboard() {
                 }
             },
             vAxis: {
-                title: "NPI",
                 ticks: [0, 1, 2, 3, 4, 5],
                 baselineColor: '#777',
                 gridlineColor: '#777',
@@ -909,7 +921,9 @@ function drawDashboard() {
                 }
             },
             chartArea: {
-                width: '93%',
+                left: '70',
+                right: '10',
+                width: '100%',
                 height: '73%'
             }
         },
@@ -950,7 +964,6 @@ function drawDashboard() {
                 }
             },
             vAxis: {
-                title: "Pupil Size",
                 ticks: [0, 1, 2, 3, 4, 5],
                 baselineColor: '#777',
                 gridlineColor: '#777',
@@ -959,7 +972,9 @@ function drawDashboard() {
                 }
             },
             chartArea: {
-                width: '93%',
+                left: '70',
+                right: '10',
+                width: '100%',
                 height: '73%'
             }
         },
@@ -1138,11 +1153,11 @@ function drawDashboard() {
 
 }
 
-function drawModalCOxMAPChart() {
-    var data_ModalCOxMAP = new google.visualization.DataTable();
-    data_ModalCOxMAP.addColumn('number', 'MAP');
-    data_ModalCOxMAP.addColumn('number', 'COx');
-    data_ModalCOxMAP.addRows([
+function drawModalCOxLeftMAPChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('number', 'MAP');
+    data.addColumn('number', 'COx Left');
+    data.addRows([
         [60, 1],
         [70, 0.47],
         [80, 0.8],
@@ -1160,7 +1175,7 @@ function drawModalCOxMAPChart() {
         [200, -0.3],
     ]);
 
-    var options_ModalCOxMAP = {
+    var options = {
         colors: ["#47CACC"],
         tooltip: {isHtml: true},
         backgroundColor: 'transparent',
@@ -1179,7 +1194,7 @@ function drawModalCOxMAPChart() {
             }
         },
         vAxis: {
-            title: "COx",
+            title: "COx Left",
             ticks: [-1, -0.5, 0, 0.5, 1],
             baselineColor: '#777',
             gridlineColor: '#777',
@@ -1188,21 +1203,20 @@ function drawModalCOxMAPChart() {
             }
         },
         chartArea: {
-            width: '80%',
-            height: '80%'
+            width: '90%',
+            height: '70%'
         }
     };
 
-    var chart_ModalCOxMAP = new google.visualization.ColumnChart(document.getElementById("modalCOxMAPChart"));
-    chart_ModalCOxMAP.draw(data_ModalCOxMAP, options_ModalCOxMAP);
+    var modalCOxLeftMAPChart = new google.visualization.ColumnChart(document.getElementById("modalCOxLeftMAPChart"));
+    modalCOxLeftMAPChart.draw(data, options);
 }
 
-
-function drawRSO2MAPChart() {
-    var data_RSO2MAP = new google.visualization.DataTable();
-    data_RSO2MAP.addColumn('number', 'MAP');
-    data_RSO2MAP.addColumn('number', 'RSO2');
-    data_RSO2MAP.addRows([
+function drawModalCOxRightMAPChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('number', 'MAP');
+    data.addColumn('number', 'COx Right');
+    data.addRows([
         [60, 1],
         [70, 0.47],
         [80, 0.8],
@@ -1220,7 +1234,126 @@ function drawRSO2MAPChart() {
         [200, -0.3],
     ]);
 
-    var options_RSO2MAP = {
+    var options = {
+        colors: ["#47CACC"],
+        tooltip: {isHtml: true},
+        backgroundColor: 'transparent',
+        height: "100%",
+        fontSize: 15,
+        title: "Time under MAPopt : --hr--min",
+        legend: "none",
+        curveType: 'function',
+        hAxis: {
+            title: "MAP",
+            gridlines: {
+                color: '#777',
+            },
+            minorGridlines: {
+                color: '#333',
+            }
+        },
+        vAxis: {
+            title: "COx Right",
+            ticks: [-1, -0.5, 0, 0.5, 1],
+            baselineColor: '#777',
+            gridlineColor: '#777',
+            minorGridlines: {
+                color: '#333',
+            }
+        },
+        chartArea: {
+            width: '90%',
+            height: '70%'
+        }
+    };
+
+    var modalCOxRightMAPChart = new google.visualization.ColumnChart(document.getElementById("modalCOxRightMAPChart"));
+    modalCOxRightMAPChart.draw(data, options);
+}
+
+function drawModalCOxAverageMAPChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('number', 'MAP');
+    data.addColumn('number', 'COx Average');
+    data.addRows([
+        [60, 1],
+        [70, 0.47],
+        [80, 0.8],
+        [90, 0.67],
+        [100, 0.3],
+        [110, -0.3],
+        [120, -0.4],
+        [130, -0.16],
+        [140, 0.12],
+        [150, 0.4],
+        [160, 0.34],
+        [170, 0.67],
+        [180, 0.3],
+        [190, -0.3],
+        [200, -0.3],
+    ]);
+
+    var options = {
+        colors: ["#47CACC"],
+        tooltip: {isHtml: true},
+        backgroundColor: 'transparent',
+        height: "100%",
+        fontSize: 15,
+        title: "Time under MAPopt : --hr--min",
+        legend: "none",
+        curveType: 'function',
+        hAxis: {
+            title: "MAP",
+            gridlines: {
+                color: '#777',
+            },
+            minorGridlines: {
+                color: '#333',
+            }
+        },
+        vAxis: {
+            title: "COx Average",
+            ticks: [-1, -0.5, 0, 0.5, 1],
+            baselineColor: '#777',
+            gridlineColor: '#777',
+            minorGridlines: {
+                color: '#333',
+            }
+        },
+        chartArea: {
+            width: '90%',
+            height: '70%'
+        }
+    };
+
+    var modalCOxAverageMAPChart = new google.visualization.ColumnChart(document.getElementById("modalCOxAverageMAPChart"));
+    modalCOxAverageMAPChart.draw(data, options);
+}
+
+
+function drawModalRSO2MAPChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('number', 'MAP');
+    data.addColumn('number', 'RSO2');
+    data.addRows([
+        [60, 1],
+        [70, 0.47],
+        [80, 0.8],
+        [90, 0.67],
+        [100, 0.3],
+        [110, -0.3],
+        [120, -0.4],
+        [130, -0.16],
+        [140, 0.12],
+        [150, 0.4],
+        [160, 0.34],
+        [170, 0.67],
+        [180, 0.3],
+        [190, -0.3],
+        [200, -0.3],
+    ]);
+
+    var options = {
         colors: ["#47CACC"],
         tooltip: {isHtml: true},
         backgroundColor: 'transparent',
@@ -1248,33 +1381,29 @@ function drawRSO2MAPChart() {
             }
         },
         chartArea: {
-            width: '93%',
-            height: '73%'
-        },
-        chartArea: {
-            width: '80%',
-            height: '80%'
+            width: '90%',
+            height: '70%'
         }
     };
 
-    var chart_RSO2MAP = new google.visualization.ScatterChart(document.getElementById('modalRSO2MAPChart'));
+    var modalRSO2MAPChart = new google.visualization.ScatterChart(document.getElementById('modalRSO2MAPChart'));
 
-    chart_RSO2MAP.draw(data_RSO2MAP, options_RSO2MAP);
+    modalRSO2MAPChart.draw(data, options);
 }
 
 
-function drawCO2xETCO2Chart() {
-    var data_CO2xETCO2 = new google.visualization.DataTable();
-    data_CO2xETCO2.addColumn('number', 'CO2x');
-    data_CO2xETCO2.addColumn('number', 'ETCO2');
-    data_CO2xETCO2.addRows([
+function drawModalCO2xETCO2LeftChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('number', 'CO2x');
+    data.addColumn('number', 'ETCO2 Left');
+    data.addRows([
         [10, 1],
         [20, 0.47],
         [30, 0.8],
         [40, 0.67],
     ]);
 
-    var options_CO2xETCO2 = {
+    var options = {
         colors: ["#47CACC"],
         tooltip: {isHtml: true},
         backgroundColor: 'transparent',
@@ -1300,28 +1429,122 @@ function drawCO2xETCO2Chart() {
             }
         },
         chartArea: {
-            width: '80%',
+            width: '90%',
             height: '80%'
         }
     };
 
-    var chart_CO2xETCO2 = new google.visualization.ColumnChart(document.getElementById("modalCO2xETCO2Chart"));
-    chart_CO2xETCO2.draw(data_CO2xETCO2, options_CO2xETCO2);
+    var modalCO2xETCO2LeftChart = new google.visualization.ColumnChart(document.getElementById("modalCO2xETCO2LeftChart"));
+    modalCO2xETCO2LeftChart.draw(data, options);
 }
 
 
-function drawRSO2ETCO2Chart() {
-    var data_RSO2ETCO2 = new google.visualization.DataTable();
-    data_RSO2ETCO2.addColumn('number', 'RSO2');
-    data_RSO2ETCO2.addColumn('number', 'ETCO2');
-    data_RSO2ETCO2.addRows([
+function drawModalCO2xETCO2RightChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('number', 'CO2x');
+    data.addColumn('number', 'ETCO2 Right');
+    data.addRows([
         [10, 1],
         [20, 0.47],
         [30, 0.8],
         [40, 0.67],
     ]);
 
-    var options_RSO2ETCO2 = {
+    var options = {
+        colors: ["#47CACC"],
+        tooltip: {isHtml: true},
+        backgroundColor: 'transparent',
+        height: "100%",
+        title: "Time under ETCO2opt : --hr--min",
+        legend: "none",
+        fontSize: 15,
+        curveType: 'function',
+        hAxis: {
+            title: "ETCO2 Right",
+            gridlineColor: '#777',
+            minorGridlines: {
+                color: '#333',
+            }
+        },
+        vAxis: {
+            title: "CO2x",
+            ticks: [-1, -0.5, 0, 0.5, 1],
+            baselineColor: '#777',
+            gridlineColor: '#777',
+            minorGridlines: {
+                color: '#333',
+            }
+        },
+        chartArea: {
+            width: '90%',
+            height: '80%'
+        }
+    };
+
+    var modalCO2xETCO2RightChart = new google.visualization.ColumnChart(document.getElementById("modalCO2xETCO2RightChart"));
+    modalCO2xETCO2RightChart.draw(data, options);
+}
+
+
+function drawModalCO2xETCO2AverageChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('number', 'CO2x');
+    data.addColumn('number', 'ETCO2 Average');
+    data.addRows([
+        [10, 1],
+        [20, 0.47],
+        [30, 0.8],
+        [40, 0.67],
+    ]);
+
+    var options = {
+        colors: ["#47CACC"],
+        tooltip: {isHtml: true},
+        backgroundColor: 'transparent',
+        height: "100%",
+        title: "Time under ETCO2opt : --hr--min",
+        legend: "none",
+        fontSize: 15,
+        curveType: 'function',
+        hAxis: {
+            title: "ETCO2 Average",
+            gridlineColor: '#777',
+            minorGridlines: {
+                color: '#333',
+            }
+        },
+        vAxis: {
+            title: "CO2x",
+            ticks: [-1, -0.5, 0, 0.5, 1],
+            baselineColor: '#777',
+            gridlineColor: '#777',
+            minorGridlines: {
+                color: '#333',
+            }
+        },
+        chartArea: {
+            width: '90%',
+            height: '80%'
+        }
+    };
+
+    var modalCO2xETCO2AverageChart = new google.visualization.ColumnChart(document.getElementById("modalCO2xETCO2AverageChart"));
+    modalCO2xETCO2AverageChart.draw(data, options);
+}
+
+
+function drawModalRSO2ETCO2Chart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('number', 'RSO2');
+    data.addColumn('number', 'ETCO2');
+    data.addRows([
+        [10, 1],
+        [20, 0.47],
+        [30, 0.8],
+        [40, 0.67],
+    ]);
+
+    var options = {
         colors: ["#47CACC"],
         tooltip: {isHtml: true},
         backgroundColor: 'transparent',
@@ -1349,21 +1572,25 @@ function drawRSO2ETCO2Chart() {
             }
         },
         chartArea: {
-            width: '80%',
+            width: '90%',
             height: '80%'
         }
     };
 
-    var chart_RSO2ETCO2 = new google.visualization.ScatterChart(document.getElementById('modalRSO2ETCO2Chart'));
+    var modalRSO2ETCO2Chart = new google.visualization.ScatterChart(document.getElementById('modalRSO2ETCO2Chart'));
 
-    chart_RSO2ETCO2.draw(data_RSO2ETCO2, options_RSO2ETCO2);
+    modalRSO2ETCO2Chart.draw(data, options);
 }
 
 
 google.charts.load("current", {'packages': ['corechart', 'bar', 'scatter','controls']});
 google.charts.setOnLoadCallback(drawDashboard);
-google.charts.setOnLoadCallback(drawModalCOxMAPChart);
-google.charts.setOnLoadCallback(drawRSO2MAPChart);
-google.charts.setOnLoadCallback(drawCO2xETCO2Chart);
-google.charts.setOnLoadCallback(drawRSO2ETCO2Chart);
+google.charts.setOnLoadCallback(drawModalCOxLeftMAPChart);
+google.charts.setOnLoadCallback(drawModalCOxRightMAPChart);
+google.charts.setOnLoadCallback(drawModalCOxAverageMAPChart);
+google.charts.setOnLoadCallback(drawModalRSO2MAPChart);
+google.charts.setOnLoadCallback(drawModalCO2xETCO2LeftChart);
+google.charts.setOnLoadCallback(drawModalCO2xETCO2RightChart);
+google.charts.setOnLoadCallback(drawModalCO2xETCO2AverageChart);
+google.charts.setOnLoadCallback(drawModalRSO2ETCO2Chart);
 

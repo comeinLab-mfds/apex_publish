@@ -73,8 +73,8 @@ const COxMAPModal = () => {
   backdrop.classList.add('active')
 }
 
-const ETCO2Modal = () => {
-  const modal = document.querySelector('.modal-ETCO2')
+const CO2xETCO2Modal = () => {
+  const modal = document.querySelector('.modal-CO2x-ETCO2')
   modal.classList.add('active')
   backdrop.classList.add('active')
 }

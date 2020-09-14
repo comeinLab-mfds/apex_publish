@@ -14,9 +14,6 @@ input {
     background-position: 100% 0;
 }
 
-.login-container {
-}
-
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -47,6 +44,7 @@ h1 {
 
 .login-container {
     display: flex;
+    max-width: 800px;
 }
 
 .brand {
