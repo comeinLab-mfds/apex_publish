@@ -58,10 +58,10 @@ function drawDashboard() {
     data.addColumn('number', 'MAP OP_BP_max1');
     data.addColumn('number', 'MAP OP_BP_max2');
     data.addColumn('number', 'MAP');
-    data.addColumn('number', 'ETCO2 OP_BP_min1');
-    data.addColumn('number', 'ETCO2 OP_BP_min2');
-    data.addColumn('number', 'ETCO2 OP_BP_max1');
-    data.addColumn('number', 'ETCO2 OP_BP_max2');
+    data.addColumn('number', 'OP_ETCO2_min1');
+    data.addColumn('number', 'OP_ETCO2_min2');
+    data.addColumn('number', 'OP_ETCO2_max1');
+    data.addColumn('number', 'OP_ETCO2_max2');
     data.addColumn('number', 'ETCO2');
     data.addColumn('number', 'SJVO2');
     data.addColumn('number', 'ADJL');
