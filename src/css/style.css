@@ -469,6 +469,15 @@ header .change-theme small {
     background-color: darkslategray;
 }
 
+.content.list .record > div {
+    display: flex;
+    align-items: center;
+}
+
+.content.list .record > div > *:not(:last-child) {
+    margin-right: 1rem;
+}
+
 .content.list .record label {
     position: relative;
     left: auto;
@@ -476,6 +485,22 @@ header .change-theme small {
 
 .content.list .record span {
     font-weight: normal;
+    line-height: 1;
+}
+
+.content.list.intervention .record-container {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.content.list.intervention .record-container > div {
+    flex: 1 1 auto
+}
+
+.content.list.intervention .record-container .delete {
+    margin-left: .5rem;
+    fill: indianred;
 }
 
 .content.list.intervention .record li {
@@ -488,7 +513,6 @@ header .change-theme small {
 }
 
 .content.list.intervention .datetime {
-    margin-left: 1rem;
     font-size: 13px;
     color: #CCC;
 }
@@ -1021,6 +1045,10 @@ header .change-theme small {
 .theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark h5,
 .theme-dark a {
     color: white;
+}
+
+.theme-dark svg {
+    fill: white;
 }
 
 .theme-dark button {
