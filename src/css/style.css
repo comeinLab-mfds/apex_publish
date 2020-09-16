@@ -469,8 +469,42 @@ header .change-theme small {
     background-color: darkslategray;
 }
 
+.content.list .record label {
+    position: relative;
+    left: auto;
+}
+
 .content.list .record span {
     font-weight: normal;
+}
+
+.content.list.intervention .record li {
+    margin-right: .5rem;
+}
+
+.content.list.intervention .record li:not(:last-of-type)::after {
+    content: '\00B7';
+    padding-left: .5rem;
+}
+
+.content.list.intervention .datetime {
+    margin-left: 1rem;
+    font-size: 13px;
+    color: #CCC;
+}
+
+.content.list.intervention .comment {
+    justify-content: flex-start;
+    background: rgba(255,255,255,.1);
+    padding: .5rem;
+    border-radius: .5rem;
+    margin-top: .5rem;
+}
+
+.content.list .record.comment span {
+    font-weight: normal;
+    text-align: left;
+    color: rgba(255,255,255,.4)
 }
 
 .scroll-handler {
@@ -553,7 +587,7 @@ header .change-theme small {
 }
 
 .title h3 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: normal;
 }
 
@@ -882,7 +916,7 @@ header .change-theme small {
     font-family: "Nunito", "sans-serif";
     text-align: right;
     font-weight: bold;
-    flex: 1 1 100%;
+    flex: 1 1 auto;
 }
 
 .record input[type="datetime"],
@@ -1047,7 +1081,8 @@ header .change-theme small {
     fill: white;
 }
 
-.theme-dark .record {;
+.theme-dark .record {
+    color: white
 }
 
 .theme-dark .record input,
