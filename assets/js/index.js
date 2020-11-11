@@ -147,7 +147,7 @@ function handleDragEnter(e) {
   // this / e.target is the current hover target.
 }
 
-function handleDragLeave(e) {
+function handleDragLeave() {
   this.classList.remove('over');  // this / e.target is previous target element.
 }
 
@@ -175,7 +175,7 @@ function handleDrop(e) {
   return false;
 }
 
-function handleDragEnd(e) {
+function handleDragEnd() {
   // this/e.target is the source node.
   this.classList.remove('over');
 

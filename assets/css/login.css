@@ -1,12 +1,28 @@
 input {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
     border-radius: 0;
 }
 
 .login {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -moz-background-size: 200%;
     background-size: 200%;
+    background-image: -webkit-gradient(linear, right top, left bottom, from(darkslateblue), color-stop(80%, darkslategray), to(darkslategray));
+    background-image: -webkit-linear-gradient(top right, darkslateblue 0%, darkslategray 80%, darkslategray 100%);
+    background-image: -moz-linear-gradient(top right, darkslateblue 0%, darkslategray 80%, darkslategray 100%);
     background-image: linear-gradient(to bottom left, darkslateblue 0%, darkslategray 80%, darkslategray 100%);
+    -webkit-transition: 600ms ease;
+    -moz-transition: 600ms ease;
     transition: 600ms ease;
 }
 
@@ -14,15 +30,39 @@ input {
     background-position: 100% 0;
 }
 
-@keyframes gradient {
+@-webkit-keyframes gradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
     50% {
         background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
+    }
+}
+
+@-moz-keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
     }
 }
 
@@ -43,6 +83,10 @@ h1 {
 }
 
 .login-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 800px;
 }
@@ -50,6 +94,7 @@ h1 {
 .brand {
     padding: 20px;
     background: url(https://goo.gl/A0ynht);
+    -moz-background-size: cover;
     background-size: cover;
     background-position: center center;
     color: #fff;
@@ -57,7 +102,11 @@ h1 {
     min-width: 450px;
     min-height: 560px;
     position: relative;
+    -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.6s cubic-bezier(1, -0.375, 0.285, 0.995);
+    -moz-transition: all 0.6s cubic-bezier(1, -0.375, 0.285, 0.995);
     transition: all 0.6s cubic-bezier(1, -0.375, 0.285, 0.995);
     z-index: 9999;
 }
@@ -89,6 +138,9 @@ h1 {
 .brand a.logo span {
     font-size: 30px;
     color: #fff;
+    -webkit-transform: translateX(-5px);
+    -moz-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
     transform: translateX(-5px);
     display: inline-block;
 }
@@ -97,14 +149,22 @@ h1 {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
     transition: all 0.6s;
 }
 
 .brand .heading.active {
     top: 100px;
     left: 100px;
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
     transform: translate(0);
 }
 
@@ -130,6 +190,9 @@ h1 {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     margin-top: 60px;
 }
@@ -147,16 +210,26 @@ h1 {
     background: slateblue;
     text-decoration: none;
     color: #fff;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
     border-radius: 30px;
 }
 
 .brand .success-msg p, .brand .success-msg a {
+    -webkit-transition: all 0.9s;
+    -moz-transition: all 0.9s;
     transition: all 0.9s;
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
     transform: translateY(20px);
     opacity: 0;
 }
 
 .brand .success-msg p.active, .brand .success-msg a.active {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
 }
@@ -171,9 +244,13 @@ h1 {
     background: rgba(0,0,0,.2);
     min-height: 500px;
     margin-top: 30px;
+    -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     color: #bbbbbb;
     padding: 30px 0 60px;
+    -webkit-transition: all 0.9s cubic-bezier(1, -0.375, 0.285, 0.995);
+    -moz-transition: all 0.9s cubic-bezier(1, -0.375, 0.285, 0.995);
     transition: all 0.9s cubic-bezier(1, -0.375, 0.285, 0.995);
     position: absolute;
     top: 0;
@@ -183,6 +260,9 @@ h1 {
 }
 
 .form .form-peice.switched {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
     transform: translateX(-100%);
     width: 100%;
     left: 0;
@@ -195,6 +275,9 @@ h1 {
     position: absolute;
     top: 50%;
     left: 60%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -222,13 +305,21 @@ h1 {
     font-weight: 400;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
     transform: translateY(20px);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
     transition: all 0.4s;
     cursor: text;
     z-index: -1;
 }
 
 .form label.active {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
     transform: translateY(0px);
     font-size: 10px;
 }
@@ -273,7 +364,15 @@ h1 {
 
 .CTA {
     margin-top: 2rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -283,6 +382,8 @@ h1 {
     padding: .7rem 2rem;
     background: slateblue;
     color: #fff;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
     border-radius: 30px;
     margin-right: 20px;
     border: none;
@@ -295,6 +396,8 @@ h1 {
     font-family: "Montserrat", sans-serif;
     color: #bbbbbb;
     text-decoration: underline;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
 

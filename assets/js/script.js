@@ -1056,10 +1056,6 @@ function drawDashboard() {
                 }
             },
             chartArea: {
-                width: '93%',
-                height: '73%'
-            },
-            chartArea: {
                 width: '80%',
                 height: '80%'
             }
