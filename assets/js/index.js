@@ -29,7 +29,7 @@ function countdown(elementName, minutes, seconds) {
     time = new Date(msLeft);
     hours = time.getUTCHours();
     mins = time.getUTCMinutes();
-    element.innerHTML = (hours ? twoDigits(hours) + ':' + twoDigits(mins) : twoDigits(mins)) + ':' + twoDigits(time.getUTCSeconds());
+    element.innerHTML = (hours ? hours + ':' + twoDigits(mins) : mins) + ':' + twoDigits(time.getUTCSeconds());
     setTimeout(updateTimer, time.getUTCMilliseconds() + 500);
 
   }
@@ -73,8 +73,8 @@ const COxMAPModal = () => {
   backdrop.classList.add('active')
 }
 
-const CO2xETCO2Modal = () => {
-  const modal = document.querySelector('.modal-CO2x-ETCO2')
+const ETCO2Modal = () => {
+  const modal = document.querySelector('.modal-ETCO2')
   modal.classList.add('active')
   backdrop.classList.add('active')
 }
@@ -147,7 +147,7 @@ function handleDragEnter(e) {
   // this / e.target is the current hover target.
 }
 
-function handleDragLeave() {
+function handleDragLeave(e) {
   this.classList.remove('over');  // this / e.target is previous target element.
 }
 
@@ -175,7 +175,7 @@ function handleDrop(e) {
   return false;
 }
 
-function handleDragEnd() {
+function handleDragEnd(e) {
   // this/e.target is the source node.
   this.classList.remove('over');
 
