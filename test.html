@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>google.charts.load('current', {
+packages: ['gauge']
+}).then(function () {
+var jsonData = {
+"Label": "1",
+"Waterlevel": 82
+};
+var data = new google.visualization.DataTable();
+data.addColumn('string', 'Label');
+data.addColumn('number', 'Waterlevel');
+var row = [];
+for (var key in jsonData) {
+row.push(jsonData[key]);
+}
+data.addRow(row);
+var options = {
+width: 400, height: 120,
+redFrom: 90, redTo: 100,
+yellowFrom:75, yellowTo: 90,
+minorTicks: 5
+};
+var chart = new google.visualization.Gauge(document.getElementById('waterlevel_div'));
+chart.draw(data, options);
+});
+</script>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<div id="waterlevel_div"></div>
+</body>
+</html>
