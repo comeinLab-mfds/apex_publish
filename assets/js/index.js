@@ -34,6 +34,7 @@ if (filterCharts) {
             });
         }
     })
+
     function countdown(elementName, minutes, seconds) {
         var element, endTime, hours, mins, msLeft, time;
 
@@ -69,12 +70,12 @@ const modalCOxMAP = document.querySelector('.modal-COx-MAP')
 const modalETCO2 = document.querySelector('.modal-ETCO2')
 
 
-const COxMAPModal = () => {
+const openModalMAP = () => {
     modalCOxMAP.classList.add('active')
     backdrop.classList.add('active')
 }
 
-const ETCO2Modal = () => {
+const openModalETCO2 = () => {
     modalETCO2.classList.add('active')
     backdrop.classList.add('active')
 }
@@ -87,10 +88,6 @@ if (backdrop) {
     backdrop.addEventListener('click', closeModal)
 }
 
-
-$(".close").on("click", function () {
-    $(".modal, .modal-backdrop").removeClass("active");
-});
 
 const content = document.querySelector('.content')
 const scrollHandler = document.querySelector('.scroll-handler')
