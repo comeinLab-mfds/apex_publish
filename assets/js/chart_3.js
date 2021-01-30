@@ -129,121 +129,74 @@ const interventionCoxTime = (minInterval, maxInterval) => {
 }
 
 const interventionTimestamp = (minInterval, maxInterval) => {
+    dataValue[25][410] = minInterval
+    dataValue[26][410] = maxInterval
+    dataValue[27][410] = "vasopressor increase"
 
-// 9/19 16:10
-    dataValue[25][25] = minInterval
-    dataValue[26][25] = maxInterval
-    dataValue[27][25] = "increase sedation"
+// 2020/5/5 21:16
+    dataValue[25][715] = minInterval
+    dataValue[26][715] = maxInterval
+    dataValue[27][715] = "vasopressor increase"
 
-// 9/19 17:00
-    dataValue[25][32] = minInterval
-    dataValue[26][32] = maxInterval
-    dataValue[27][32] = "TTM Target temperature"
+// 2020/5/6 04:00
+    dataValue[25][1120] = minInterval
+    dataValue[26][1120] = maxInterval
+    dataValue[27][1120] = "TTM start normothermia"
 
-// 9/19 19:30
-    dataValue[25][62] = minInterval
-    dataValue[26][62] = maxInterval
-    dataValue[27][62] = "adjust ventilation"
+// 2020/5/6 09:27
+    dataValue[25][1445] = minInterval
+    dataValue[26][1445] = maxInterval
+    dataValue[27][1445] = "stop NMB"
 
-// 9/19 21:40
-    dataValue[25][88] = minInterval
-    dataValue[26][88] = maxInterval
-    dataValue[27][88] = "adjust ventilation"
+// 2020/5/6 12:04
+    dataValue[25][1605] = minInterval
+    dataValue[26][1605] = maxInterval
+    dataValue[27][1605] = "vasopressor increase"
 
-// 9/19 04:40
-    dataValue[25][172] = minInterval
-    dataValue[26][172] = maxInterval
-    dataValue[27][172] = "vasopressor increase"
+// 2020/5/6 16:45
+    dataValue[25][1885] = minInterval
+    dataValue[26][1885] = maxInterval
+    dataValue[27][1885] = "transfusion"
 
-// 9/19 10:20
-    dataValue[25][240] = minInterval
-    dataValue[26][240] = maxInterval
-    dataValue[27][240] = "fluid infusion"
+// 2020/5/6 19:02
+    dataValue[25][2020] = minInterval
+    dataValue[26][2020] = maxInterval
+    dataValue[27][2020] = "transfusion"
 
-// 9/19 10:50
-    dataValue[25][246] = minInterval
-    dataValue[26][246] = maxInterval
-    dataValue[27][246] = "increase sedation"
+// 2020/5/7 06:00
+    dataValue[25][2680] = minInterval
+    dataValue[26][2680] = maxInterval
+    dataValue[27][2680] = "stop sedation"
 
-// 9/19 12:05
-    dataValue[25][261] = minInterval
-    dataValue[26][261] = maxInterval
-    dataValue[27][261] = "increase sedation"
+// 2020/5/7 07:00
+    dataValue[25][2740] = minInterval
+    dataValue[26][2740] = maxInterval
+    dataValue[27][2740] = "adjust oxygenation"
 
-// 9/19 13:30
-    dataValue[25][278] = minInterval
-    dataValue[26][278] = maxInterval
-    dataValue[27][278] = "TTM start rewarming"
+// 2020/5/7 07:45
+    dataValue[25][2785] = minInterval
+    dataValue[26][2785] = maxInterval
+    dataValue[27][2785] = "adjust ventilation"
 
-// 9/19 13:35 * 2
-    dataValue[25][279] = minInterval
-    dataValue[26][279] = maxInterval
-    dataValue[27][279] = "increase sedation"
+// 2020/5/7 08:42
+    dataValue[25][2840] = minInterval
+    dataValue[26][2840] = maxInterval
+    dataValue[27][2840] = "TTM stop"
 
-// 9/19 13:55 Non-intervention
-    dataValue[25][283] = minInterval
-    dataValue[26][283] = maxInterval
-    dataValue[27][283] = " "
+// 2020/5/7 09:00
+    dataValue[25][2860] = minInterval
+    dataValue[26][2860] = maxInterval
+    dataValue[27][2860] = "adjust oxygenation"
 
-// 9/19 20:00
-    dataValue[25][283] = minInterval
-    dataValue[26][283] = maxInterval
-    dataValue[27][283] = "TTM start normothermia"
+// 2020/5/7 10:10
+    dataValue[25][2930] = minInterval
+    dataValue[26][2930] = maxInterval
+    dataValue[27][2930] = "increase sedation"
 
-// 9/19 21:05
-    dataValue[25][356] = minInterval
-    dataValue[26][356] = maxInterval
-    dataValue[27][356] = "increase sedation"
-
-// 9/19 21:45
-    dataValue[25][369] = minInterval
-    dataValue[26][369] = maxInterval
-    dataValue[27][369] = "increase sedation"
-
-// 9/19 26:25
-    dataValue[25][377] = minInterval
-    dataValue[26][377] = maxInterval
-    dataValue[27][377] = "vasopressor increase"
-
-// 9/19 03:27
-    dataValue[25][396] = minInterval
-    dataValue[26][396] = maxInterval
-    dataValue[27][396] = "increase sedation"
-
-// 9/20 04:49
-    dataValue[25][445] = minInterval
-    dataValue[26][445] = maxInterval
-    dataValue[27][445] = "vasopressor increase"
-
-// 9/20 05:03
-    dataValue[25][462] = minInterval
-    dataValue[26][462] = maxInterval
-    dataValue[27][462] = "vasopressor increase"
-
-// 9/20 05:15
-    dataValue[25][465] = minInterval
-    dataValue[26][465] = maxInterval
-    dataValue[27][465] = "vasopressor increase"
-
-// 9/20 05:27
-    dataValue[25][469] = minInterval
-    dataValue[26][469] = maxInterval
-    dataValue[27][469] = "vasopressor increase"
-
-// 9/20 06:00
-    dataValue[25][476] = minInterval
-    dataValue[26][476] = maxInterval
-    dataValue[27][476] = "stop sedation"
-
-// 9/20  08:43 Non-intervention
-    dataValue[25][509] = minInterval
-    dataValue[26][509] = maxInterval
-    dataValue[27][509] = " "
-
-// 9/20 09:37
-    dataValue[25][520] = minInterval
-    dataValue[26][520] = maxInterval
-    dataValue[27][520] = "TTM stop"
+// 2020/5/7 10:31    No Intervention
+    dataValue[25][2950] = minInterval
+    dataValue[26][2950] = maxInterval
+    dataValue[27][2950] = " "
 }
 
 
@@ -252,9 +205,10 @@ function drawCOxMAPChart() {
     interventionCoxTime(-1, 1)
 
     data.addColumn('date', 'Time of Day');
-    data.addColumn('number', 'Left');
-    data.addColumn('number', 'Right');
-    data.addColumn('number', 'Average');
+    data.addColumn('number', 'abnormal');
+    data.addColumn('number', 'left');
+    data.addColumn('number', 'right');
+    data.addColumn('number', 'average');
     data.addColumn('number', 'intervention');
     data.addColumn('number', 'intervention');
     data.addColumn('number', 'intervention');
@@ -275,6 +229,7 @@ function drawCOxMAPChart() {
 
         data.addRow([
             timestamp,
+            0.3,
             parseFloat(dataValue[14][i]),
             parseFloat(dataValue[15][i]),
             parseFloat(dataValue[16][i]),
@@ -287,7 +242,7 @@ function drawCOxMAPChart() {
     }
 
     const options = {
-        colors: ['#FAA7B8', '#6096FD', 'darkseagreen', 'bisque'],
+        colors: ['orangered', '#FAA7B8', '#6096FD', 'darkseagreen', 'bisque'],
         tooltip: {isHtml: true},
         backgroundColor: 'transparent',
         height: "100%",
@@ -297,7 +252,10 @@ function drawCOxMAPChart() {
         lineWidth: 1.5,
         seriesType: 'line',
         series: {
-            3: {
+            0: {
+                type: 'area',
+            },
+            4: {
                 type: 'candlesticks',
             },
         },
@@ -322,8 +280,7 @@ function drawCOxMAPChart() {
         vAxis: {
             title: "COx MAP",
             ticks: [-1, 0, 0.3, 1],
-            baseline: 0.3,
-            baselineColor: 'green',
+            baseline: 1,
             gridlineColor: '#777',
         },
         chartArea: {
@@ -332,7 +289,7 @@ function drawCOxMAPChart() {
         }
     };
 
-    var chart_COxMAP = new google.visualization.LineChart(document.getElementById('chart_COxMAP'));
+    var chart_COxMAP = new google.visualization.ComboChart(document.getElementById('chart_COxMAP'));
     chart_COxMAP.draw(data, options);
 }
 
